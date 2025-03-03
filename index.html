@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrations</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, darkblue, black, skyblue, brown);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('csi.gif') no-repeat center center;
+            background-size: contain;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        
+        .container {
+            background: transparent; box-shadow: none;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
+            width: 400px;
+            border: 3px solid #333;
+        }
+        h1 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: none;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .form-links {
+            list-style: none;
+            padding: 0;
+        }
+        .form-links li {
+            margin: 15px 0;
+        }
+        .form-links a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #007bff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #f8f9fa;
+            display: inline-block;
+            transition: background 0.3s, color 0.3s;
+            border: 2px solid #007bff;
+        }
+        .form-links a:hover {
+            background: #007bff;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .form-links a {
+                font-size: 16px;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registrations</h1>
+        <ul class="form-links">
+            <li><a href="https://forms.gle/example1" target="_blank">Treasure Hunt</a></li>
+            <li><a href="https://forms.gle/example2" target="_blank">Create Your Own Design</a></li>
+            <li><a href="https://forms.gle/example3" target="_blank">Tech Quiz</a></li>
+            <li><a href="https://forms.gle/example4" target="_blank">Idea Presentation</a></li>
+        </ul>
+    </div>
+</body>
+</html>
